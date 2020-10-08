@@ -18,14 +18,15 @@ public class Task02 {
         // Код необходимый для тестирования, не изменять
         Scanner scanner = new Scanner(System.in);
         int hour = (args.length != 1) ? scanner.nextInt() : Integer.parseInt(args[0]);
+        if (hour >= 0 & hour < 6) {
+            System.out.println("Good night");
+        } else if (hour >= 6 & hour < 12) {
+            System.out.println("Good morning");
+        } else if (hour >= 12 & hour < 18) {
+            System.out.println("Good day");
+        } else if (hour >= 18 & hour < 24) {
+            System.out.println("Good evening");
+        }
 
-        //TODO
-        // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
-        // Для проверки решения необходимо запустить @Test для данного class (в директории test)
-        if (h > 3 && h < 7) document.writeln("Доброй ночи");
-        if (h > 6 && h < 12) document.writeln("Доброе утро");
-        if (h > 11 && h < 17) document.writeln("Добрый день");
-        if (h > 16 && h < 24) document.writeln("Добрый вечер");
-        if (h > 23 || h < 4 ) document.writeln("Доброй ночи");
     }
 }

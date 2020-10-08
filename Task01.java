@@ -23,22 +23,11 @@ public class Task01 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
-        int num1 = 16;
-        int num2 = 44;
-        int num3 = 21;
-        int num4 = 59;
-        int num5 = 60;
-        int num6 = 89;
-        int num7 = 53;
-        int num8 = 4;
-        int num9 = 25;
-        int num10 = 95;
-        int num11 = 6;
-        int num12 = 30;
-        int num13 = 80;
-        int num14 = 44;
-        int num15 = 66;
-        if (num1 > num2 && num1 > 7) {
-
+        int positionLayerByDamage = (args.length != 1) ? scanner.nextInt () : Integer.parseInt(args[0]);
+        if (positionLayerByDamage <= 5 & positionLayerByDamage >= 0) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        }
     }
 }

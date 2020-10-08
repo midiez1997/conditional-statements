@@ -17,24 +17,27 @@ public class Task04 {
         // Код необходимый для тестирования, не изменять
         Scanner scanner = new Scanner(System.in);
         int weekdayNumber = (args.length != 1) ? scanner.nextInt() : Integer.parseInt(args[0]);
-
-        //TODO
-        // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
-        // Для проверки решения необходимо запустить @Test для данного class (в директории test)
-        if (weekdayNumber = 1) {
-            return "MONDAY";
-        } else if (weekdayNumber = 2) {
-            return "TUESDAY";
-        } else if (weekdayNumber = 3) {
-            return "WEDNESDAY";
-        } else if (weekdayNumber = 4) {
-            return "THURSDAY";
-        } else if (weekdayNumber = 5) {
-            return "FRIDAY";
-        } else if (weekdayNumber = 6) {
-            return "SATURDAY";
-        } else if (weekdayNumber = 7) {
-            return "SUNDAY";
+        switch (weekdayNumber) {
+            case 1:
+                System.out.println("monday");
+                break;
+            case 2:
+                System.out.println("tuesday");
+                break;
+            case 3:
+                System.out.println("wednesday");
+                break;
+            case 4:
+                System.out.println("thursday");
+                break;
+            case 5:
+                System.out.println("friday");
+                break;
+            case 6:
+                System.out.println("saturday");
+                break;
+            case 7:
+                System.out.println("sunday");
         }
     }
 }

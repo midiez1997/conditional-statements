@@ -23,5 +23,11 @@ public class Task05 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        int positionLayerByDamage = (args.length != 1) ? scanner.nextInt () : Integer.parseInt(args[0]);
+        if (positionLayerByDamage <= 5 & positionLayerByDamage >= 0) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        }
     }
 }
